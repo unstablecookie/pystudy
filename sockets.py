@@ -1,5 +1,6 @@
 # simple network app. opens port on local server waiting for the input,
 # send short message as response
+#################################
 
 import socket
 
