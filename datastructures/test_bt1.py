@@ -42,3 +42,20 @@ def test_postorder():
 	for arg in args:
 		test_tree.insert(arg)
 	assert test_tree.postorder() == result
+def test_remove_leaf():
+	args = [44,50,20,15,28,76]
+	test_tree = BST()
+	for arg in args:
+		test_tree.insert(arg)
+	todel = 15
+	result = [44, 20, 28, 50, 76]
+	test_tree.remove(todel)
+	assert test_tree.preorder() == result
+def test_remove_root():
+	args = [44,50,20,15,28,76]
+	root = 44
+	test_tree = BST()
+	for arg in args:
+		test_tree.insert(arg)
+	test_tree.remove(root)
+	assert test_tree.root.data == 50

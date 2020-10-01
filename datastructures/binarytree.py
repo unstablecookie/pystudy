@@ -1,6 +1,9 @@
-# author github.com/stephengrice
-class Node(objects):
-
+class Node(object):
+	def __init__(self,d):
+		self.data = d
+		self.left = None
+		self.right = None
+		
 	def insert(self,d):
 		if self.data == d:
 			return False
@@ -48,7 +51,11 @@ class Node(objects):
 			self.right.preorder(l)
 		l.append(self.data)
 		return l
-class BTS(objects):
+class BST(object):
+	def __init__(self):
+		self.root = None
+
+
 	#returns True is succesfully inserted, false if exists
 	def insert(self,d):
 		if self.root:
@@ -83,7 +90,7 @@ class BTS(objects):
 			# root node has two children
 			else:
 				moveNode = self.root.right
-				moveNodeParent = None
+				moveNodeParent = self.root
 
 				while moveNode.left:
 					moveNodeParent = moveNode
