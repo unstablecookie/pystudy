@@ -1,6 +1,6 @@
 import pytest
 
-from btreetest.binarytree import Node,BST
+from binarytree import Node,BST
 
 def test_createTree():
 	test_tree = BST()
