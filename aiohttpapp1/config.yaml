@@ -1,0 +1,5 @@
+#default config file
+
+site_name: 'App1site'
+
+database_uri: postgresql://192.168.1.133:5432/app1
