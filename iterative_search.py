@@ -13,6 +13,8 @@ def find(array, val):
 			right = mid - 1
 	return False
 
+
+
 #looking for a paticular string length
 ff = ['topkeks','suchwow','wut','aIsForApple']
 ff.sort(key=len)
